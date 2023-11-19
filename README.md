@@ -124,9 +124,9 @@ sudo chmod +x backup.sh
 ```
 sudo crontab -e
 ```
-Делаю запись 
+Делаю запись: запускать срипт  /home/vboxuser/backup.sh в 0-ю минуту в 5 часов утра каждый день:
 ```
-0 * * * * /home/vboxuser/backup.sh
+0 5 * * * /home/vboxuser/backup.sh
 ```
 ![1](https://github.com/BudyGun/rezerv-copy/blob/main/img/rr30.png)
 
