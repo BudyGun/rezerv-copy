@@ -106,7 +106,6 @@ rsync -ac --delete --exclude=".*/" . /tmp/backup
 - На проверку направить файл crontab и скриншот с результатом работы утилиты.
 
 Создаю файл скрипта backub.sh следующего содержания:
-rsync -a --delete /home/joos/ /tmp/backup
 ```
 #! /bin/bash
 rsync -a --delete /home/vboxuser/ /tmp/backup
@@ -114,6 +113,10 @@ if [ "$?" -eq 0 ]; then
         logger "Rsync made a successful backup"
 else    logger "Rsync Backup error"
 fi
+```
+Делаю скрипт исполняемым:
+```
+sudo chmod +x backup.sh 
 ```
 ![1](https://github.com/BudyGun/rezerv-copy/blob/main/img/rr2.png)
 
