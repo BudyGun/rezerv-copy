@@ -120,3 +120,13 @@ sudo chmod +x backup.sh
 ```
 ![1](https://github.com/BudyGun/rezerv-copy/blob/main/img/rr2.png)
 
+Добавляю в планировщик. Вызываю планировщик командой:
+```
+sudo crontab -e
+```
+Делаю запись 
+```
+0 * * * * /home/vboxuser/backup.sh
+```
+![1](https://github.com/BudyGun/rezerv-copy/blob/main/img/rr30.png)
+
